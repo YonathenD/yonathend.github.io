@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/tabLogo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+  </head>
+  <body>
+    
+    <!-- Page transition (preloader) -->
+    <div id="preloader" style="background-color: #bed2fe;">
+      <img src="images/loader.gif" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;" alt="loader gif">
+    </div>
+
+    <!-- Orthographic view of the corner of my room -->
+    <div class="experience">
+      <canvas class="experience-canvas"></canvas>
+    </div>
+
+    <div class="page">
+      <div class="page-wrapper">
+        
+        <section class="hero">
+          <div class="hero-wrapper">
+            
+            <div class="hero-main">
+
+              <!-- About me button above my name -->
+              <div class="container" style="top: -180px;">  
+                <a href="aboutMe.html">
+                  <button class="cta">
+                    <i class="fas fa-plus" style="font-size: 24px;">&gt;</i>
+                    <span class="button-text" style="bottom: 17px;">
+                      <p class="hero-second-subheading" style="font-size: 14px;">about me</P>
+                    </span>
+                  </button>
+                </a>
+              </div>
+
+              <!-- My name with short description of what I do -->
+              <h1 class="hero-main" style="bottom: 25px;">Yonathen Desisa</h1>
+              <h1 class="hero-main-title">Yonathen Desisa</h1>
+              <p class="hero-main-description">Computer Science Student @ Virginia Tech | Software Engineer</p>
+
+            </div>
+            
+            <!-- Experiments title with projects button below -->
+            <div class="hero-second">
+              <p class="hero-second-subheading">experiments</p>
+              <div class="container" style="right: 10px; top: 50px;">  
+                <a href="projects.html">
+                  <button class="cta">
+                    <i class="fas fa-plus" style="font-size: 24px;">&lt;</i>
+                    <span class="button-text" style="bottom: 17px;">
+                      <p class="hero-second-subheading" style="font-size: 14px;">projects</p>
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-second" style="display: flex; flex-direction:column; transform: translate(-20%, 225%);">
+
+              <!-- Github icon that links to my repositories under my Github profile -->
+              <a href="https://github.com/YonathenD?tab=repositories" target = "_blank">
+                <img src="images/GitHubIcon.png" style="height: 50px; margin-bottom: 20px;" alt="Showdown Icon">
+              </a>
+              
+              <!-- Linkedin icon that links to my linkedin profile -->
+              <a href="https://www.linkedin.com/in/yonathen-desisa-64aa02217/" target = "_blank">
+                <img src="images/LinkedinIcon.png" style="height: 40px; margin-left: 3px;" alt="Showdown Icon">
+              </a>
+
+            </div>
+
+            <!-- Custom circular, white cursor with red circular trail -->
+            <div id="cursor"></div>
+            <div id="cursor2"></div>
+
+          </div>
+        </section>
+        
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    
+    <!-- Website preloader javascript -->
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function() {
+        loader.style.display = "none";
+      })
+    </script>
+
+  </body>
+</html>
