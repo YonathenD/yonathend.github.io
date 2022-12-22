@@ -7,39 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script>
-      import './style.css'
-      import Experience from "/Experience/Experience.js"
-
-      //Place orthographic view of my room on the website (document)
-      const experience = new Experience(document.querySelector(".experience-canvas"));
-
-      //White custom cursor on website
-      var cursor = document.getElementById('cursor');
-
-      document.addEventListener('mousemove', function(e){
-
-        var x= e.clientX;
-        var y = e.clientY;
- 
-        cursor.style.left = x + "px";
-        cursor.style.top = y + "px";
-
-      })
-
-      //Red custom cursor on website
-      var cursor2 = document.getElementById('cursor2');
-
-      document.addEventListener('mousemove', function(e){
-
-        var x= e.clientX;
-        var y = e.clientY;
- 
-        cursor2.style.left = x + "px";
-        cursor2.style.top = y + "px";
-
-      })
-    </script>
+    <script type="module" crossorigin src="/assets/index.63876ee2.js"></script>
     <title>About Me</title>
     
   </head>
@@ -129,6 +97,8 @@
     <script>
       AOS.init();
     </script>
+
+    <script type="module" src="./main.js"></script>
 
     <!-- Website preloader javascript -->
     <script>
