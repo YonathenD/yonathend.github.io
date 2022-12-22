@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Transition between pages ----------------------------------------- */
+#preloader {
+  background-color: #bed2fe;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+/* Socrates Quote and Projects ----------------------------------------- */
+.insp__container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.insp__content {
+  width: fit-content;
+  background: #2e3f6391;
+  padding: 50px 100px 50px 100px;
+  color: white;
+}
+
+.insp__content h1 {
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: "DM Serif Display", serif;
+}
+
+.insp__content p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+.project__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+
+/* Cursor ----------------------------------------- */
+#cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 200px;
+  position: fixed;
+  box-sizing: border-box; 
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+#cursor2 {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #F00000;
+  border-radius: 200px;
+  position: fixed;
+  box-sizing: border-box; 
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+
+  transition-duration: 400ms;
+  transition-timing-function: ease-out;
+}
+
+/* Buttons ----------------------------------------- */
+.container {
+  position: absolute;
+  float: none;
+  top: 64%;
+  margin-left: -5px;
+  text-align: center;
+}
+
+.cta {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: rgba(116, 116, 116, 0);
+  color: white;
+  transition: width 0.7s;
+}
+
+.cta:hover {
+  width: 180px;
+  transition: width 0.7s;
+}
+
+.cta i {
+  opacity: 1;
+  transition: opacity 0.5s
+}
+
+.cta:hover i {
+  opacity: 0;
+  transition: opacity 0.5s
+}
+
+.cta .button-text {
+  opacity: 0;
+  transition: opacity .5s;
+  position: absolute;
+  width: 100%;
+  left: 0;
+ }
+
+.cta:hover .button-text {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/* Experience ----------------------------------------- */
+.experience {
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.experience-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* Page Itself ----------------------------------------- */
+.page {
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-wrapper {
+  position: relative;
+}
+
+/* Hero ----------------------------------------- */
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-wrapper {
+  position: relative;
+  height: 100%;
+  width: calc(100% - 160px);
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.hero-main {
+  position: absolute;
+  bottom: 68px;
+  left: 0;
+  color: #bed2fe;
+  font-size: 64px;
+}
+
+.hero-second {
+  position: absolute;
+  top: calc(50% - 120px);
+  right: 0;
+  color: white;
+}
+
+.hero-main-title {
+  font-size: 64px;
+  
+  margin-top: -95px;
+  color:#F00000;
+  animation: anm 3s ease-in-out infinite;
+}
+
+.hero-main-description {
+  font-size: 18px;
+  color: white;
+}
+
+.hero-second-subheading {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+/* Wavy text animation ----------------------------------------- */
+@keyframes anm {
+  0%  {
+    clip-path: polygon(
+      0 0%,
+      14% 0,
+      27% 14%,
+      40% 26%,
+      53% 38%,
+      67% 48%,
+      80% 51%,
+      100% 49%,
+      100% 99%,
+      0% 99%
+    );
+  }
+  100%  {
+    clip-path: polygon(
+      0 0%,
+      14% 0,
+      27% 14%,
+      40% 26%,
+      53% 38%,
+      67% 48%,
+      80% 51%,
+      100% 49%,
+      100% 99%,
+      0% 99%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 59%,
+      14% 54%,
+      30% 53%,
+      45% 56%,
+      57% 46%,
+      66% 31%,
+      78% 17%,
+      100% 0,
+      100% 99%,
+      0% 99%
+    );
+  }
+}
+
