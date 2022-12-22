@@ -1,3 +1,3 @@
-# yonathend.github.io
+# yonathend.me
 
 This is my portfolio website.
