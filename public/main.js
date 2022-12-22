@@ -1,5 +1,5 @@
 import './style.css'
-import Experience from "./Experience/Experience.js"
+import Experience from "/Experience/Experience.js"
 
 //Place orthographic view of my room on the website (document)
 const experience = new Experience(document.querySelector(".experience-canvas"));
