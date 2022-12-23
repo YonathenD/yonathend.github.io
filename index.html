@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/tabLogo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Home</title>
+    <!-- aos css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
 
   </head>
   <body>
@@ -30,7 +32,7 @@
 
               <!-- About me button above my name -->
               <div class="container" style="top: -180px;">  
-                <a href="aboutMe.html">
+                <a href="#aboutMe">
                   <button class="cta">
                     <i class="fas fa-plus" style="font-size: 24px;">&gt;</i>
                     <span class="button-text" style="bottom: 17px;">
@@ -51,7 +53,7 @@
             <div class="hero-second">
               <p class="hero-second-subheading">experiments</p>
               <div class="container" style="right: 10px; top: 50px;">  
-                <a href="projects.html">
+                <a href="#projects">
                   <button class="cta">
                     <i class="fas fa-plus" style="font-size: 24px;">&lt;</i>
                     <span class="button-text" style="bottom: 17px;">
@@ -76,15 +78,195 @@
 
             </div>
 
-            <!-- Custom circular, white cursor with red circular trail -->
-            <div id="cursor"></div>
-            <div id="cursor2"></div>
-
           </div>
         </section>
+
+        <!-- Title of my About Me page -->
+        <section class="hero" id="aboutMe">
+          <div class="hero-wrapper">
+              <div class="hero-main">
+                  <h1 class="hero-main" style="bottom: 25px;">About Me</h1>
+                  <h1 class="hero-main-title">About Me</h1>
+              </div>
+          </div>
+        </section>
+
+        <!-- About Me description card with fade up animation -->
+        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+          <div class="insp__content">
+            <h1>“I only know one thing, and that is I know nothing.” – Socrates</h1>
+            <p>
+              Hello, my name is Yonathen Desisa and I know nothing.
+              Although some may see this statement as incompetence, I see this as an opportunity for growth, specifically in my programming. 
+              As a result, I love exploring software development concepts and ideas that were originally unknown to me. Because, ultimately, 
+              the unknown is what excites me the most.
+            </p>
+            <p>
+              If you are a recruiter looking for a Software Engineer/Developer intern, DON'T GET ME WRONG I KNOW SOMETHING!&#128513;
+            </p>
+          </div>
+        </div>
+
+        <br></br>
+
+        <!-- Website inspiration card with fade up animation -->
+        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+          <div class="insp__content" style="margin: auto;">
+            <h1>Website Inspiration</h1>
+            <p>
+              My website was inspired by bokoko33 and you can find their website 
+              <a href="https://bokoko33.me/" style="color: white;" target="_blank">here</a>.
+            </p>
+          </div>
+        </div>
+
+        <br></br>
+
+        <!-- Title of my personal projects page -->
+        <section class="hero" id="projects">
+          <div class="hero-wrapper">
+              <div class="hero-main">
+                  <h1 class="hero-main" style="bottom: 25px;">Projects</h1>
+                  <h1 class="hero-main-title">Projects</h1>
+              </div>
+          </div>
+        </section>
+
+        <!-- IOS App project card with fade up animation -->
+        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+            <div class="insp__content">
+
+                <h1>Showdown – Mobile IOS App</h1>
+              
+                <div class="project__container">
+
+                    <img src="images/ShowdownIcon.png" style="border-radius: 20%;" alt="Showdown Icon">
+         
+                    <p style="font-size: 17px; margin-left: 50px;">
+                        Creating a mobile ios app was something that I had been considering ever since I began my programming journey. By the time I had started this project, which was a couple of days before my high school graduation, 
+                        I had already grasped software development processes - specifically Agile development. <br></br> The main idea behind this app is using Apple's Multipeer Connectivity, an operating system that uses 
+                        <a href="https://en.wikipedia.org/wiki/Smartphone_ad_hoc_network" target="_blank" style="color: white;">smartphone ad hoc networks</a>
+                        to stimulate a reaction based game - similar to a cowboy showdown.
+                        Although I am still in the process of coding this app, I believe that it will turn out really well!
+                    </p>
+
+                </div>
+          
+            </div>
+        </div>
+
+        <br></br>
+
+        <!-- Code plagiarism checker project card with fade up animation -->
+        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+            <div class="insp__content">
+
+                <h1>CopyCat – Code Plagiarism Checker</h1>
+              
+                <div class="project__container">
+
+                    <img src="images/CopyCatOutput.png" alt="CopyCat Output">
+         
+                    <p style="font-size: 17px; margin-left: 50px;">
+                        This assignment was apart of my Data Structures/Algorithms course
+                        in high school, around the time of when we were learning regular expressions in Java.
+                        <br></br>
+                        As the name suggests, the objective of this assignment was to develop a java program that would be able to compare two other java programs together for plagiarism. 
+                        <br></br>
+                        I used many ideas for this project, one of them being an implementation of the 
+                        <a href="https://en.wikipedia.org/wiki/Secretary_problem" style="color: white;">Secretary Problem</a>
+                        in determining the percentage of plagiarism necessary to be considered cheating.
+                    </p>
+
+                </div>
+          
+            </div>
+        </div>
+
+        <br></br>
+
+        <!-- Basketball shot simulation project card with fade up animation -->
+        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+            <div class="insp__content">
+
+                <h1>Motion – Basketball Shot Simulation</h1>
+              
+                <div class="project__container">
+
+                    <img src="images/MotionOutput.png" style="height: auto; width: auto; max-width: 450px;" alt="Basketball shot graph">
+         
+                    <p style="font-size: 17px; margin-left: 50px;">
+                        Towards the end of my junior year, my physics teacher tasked us with a final project where we could turn in anything 
+                        physics related. Earlier on in the year I had made a program that calculated the air trajectory of a 
+                        projectile with specific parameters so I decided to do something similar for the project.
+                        <br></br>
+                        Building off of this idea, I simulated the flight of a basketball but with an animated path of travel instead.
+                        To do this I had to reverse engineer an animated spining wheel program made by my Data Structures/Algorithms teacher that
+                        used the Java utility classes Timer and TimerTask to update a JFrame.
+                    </p>
+
+                </div>
+          
+            </div>
+        </div>
+
+        <br></br>
+
+        <!-- GitHub profile card with fade up animation -->
+        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+            <div class="insp__content" style = "margin: auto;">
+
+                <h1>Where can I find the code?</h1>
+              
+                <div class="project__container">
+
+                    <p>
+                        All of these projects can be found under my GitHub profile's repositories.
+                        <br></br>
+                        <a href="https://github.com/YonathenD?tab=repositories" target = "_blank" style="color: white;">
+                            <img src="images/GitHubIcon.png" style="bottom: -10px; height: 60px; transform: translate(-10%, 35%);" alt="Github Icon"> YonathenD
+                        </a>
+                    </p>
+
+                </div>
+          
+            </div>
+        </div>
+
+        <br></br>
+        <br></br>
+
+        <!-- Return home button with fade up animation -->
+        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+
+            <div class="container" style="margin-left: auto;">  
+                <a href="index.html">
+                <button class="cta">
+                    <i class="fas fa-plus" style="font-size: 24px;">&lt;</i>
+                    <span class="button-text" style="bottom: 17px;">
+                      <p class="hero-second-subheading" style="font-size: 14px;">home</p>
+                    </span>
+                </button>
+                </a>
+            </div>
+
+        </div>
+
+        <br></br>
+        <br></br>
         
       </div>
     </div>
+
+    <!-- Custom circular, white cursor with red circular trail -->
+    <div id="cursor"></div>
+    <div id="cursor2"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
 
     <script type="module" src="main.js"></script>
     
