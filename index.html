@@ -28,7 +28,7 @@
         <section class="hero">
           <div class="hero-wrapper">
             
-            <div class="hero-main">
+            <div class="hero-main" style="justify-content: space-between; margin-bottom: -50px;">
 
               <!-- About me button above my name -->
               <div class="container" style="top: -180px;">  
@@ -43,14 +43,28 @@
               </div>
 
               <!-- My name with short description of what I do -->
-              <h1 class="hero-main" style="bottom: 25px;">Yonathen Desisa</h1>
+              <h1 class="hero-main-title" style="color:#bed2fe; animation: none; position: inherit;">Yonathen Desisa</h1>
               <h1 class="hero-main-title">Yonathen Desisa</h1>
               <p class="hero-main-description">Computer Science Student @ Virginia Tech | Software Engineer</p>
+              <div class="hero-main-description">
+
+                <!-- Github icon that links to my repositories under my Github profile -->
+                <a href="https://github.com/YonathenD?tab=repositories" target = "_blank">
+                  <img src="images/GitHubIcon.png" style="height: 50px; margin-right: 10px; margin-top: 10px;" alt="Showdown Icon">
+                </a>
+                
+                <!-- Linkedin icon that links to my linkedin profile -->
+                <a href="https://www.linkedin.com/in/yonathen-desisa-64aa02217/" target = "_blank">
+                  <img src="images/LinkedinIcon.png" style="height: 40px; margin-top: 10px;" alt="Showdown Icon">
+                </a>
+  
+              </div>
+
 
             </div>
             
             <!-- Experiments title with projects button below -->
-            <div class="hero-second">
+            <div class="hero-second" style="margin-top: 15%;">
               <p class="hero-second-subheading">experiments</p>
               <div class="container" style="right: 10px; top: 50px;">  
                 <a href="#projects">
@@ -64,19 +78,6 @@
               </div>
             </div>
 
-            <div class="hero-second" style="display: flex; flex-direction:column; transform: translate(-20%, 225%);">
-
-              <!-- Github icon that links to my repositories under my Github profile -->
-              <a href="https://github.com/YonathenD?tab=repositories" target = "_blank">
-                <img src="images/GitHubIcon.png" style="height: 50px; margin-bottom: 20px;" alt="Showdown Icon">
-              </a>
-              
-              <!-- Linkedin icon that links to my linkedin profile -->
-              <a href="https://www.linkedin.com/in/yonathen-desisa-64aa02217/" target = "_blank">
-                <img src="images/LinkedinIcon.png" style="height: 40px; margin-left: 3px;" alt="Showdown Icon">
-              </a>
-
-            </div>
 
           </div>
         </section>
@@ -85,14 +86,14 @@
         <section class="hero" id="aboutMe">
           <div class="hero-wrapper">
               <div class="hero-main">
-                  <h1 class="hero-main" style="bottom: 25px;">About Me</h1>
+                  <h1 class="hero-main-title" style="color:#bed2fe; animation: none; position: inherit;">About Me</h1>
                   <h1 class="hero-main-title">About Me</h1>
               </div>
           </div>
         </section>
 
         <!-- About Me description card with fade up animation -->
-        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+        <div class="insp__container" data-aos="fade-up" data-aos-duration="1000">
           <div class="insp__content">
             <h1>“I only know one thing, and that is I know nothing.” – Socrates</h1>
             <p>
@@ -110,7 +111,7 @@
         <br></br>
 
         <!-- Website inspiration card with fade up animation -->
-        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+        <div class="insp__container" data-aos="fade-up" data-aos-duration="1000">
           <div class="insp__content" style="margin: auto;">
             <h1>Website Inspiration</h1>
             <p>
@@ -126,23 +127,23 @@
         <section class="hero" id="projects">
           <div class="hero-wrapper">
               <div class="hero-main">
-                  <h1 class="hero-main" style="bottom: 25px;">Projects</h1>
+                  <h1 class="hero-main-title" style="color:#bed2fe; animation: none; position: inherit;">Projects</h1>
                   <h1 class="hero-main-title">Projects</h1>
               </div>
           </div>
         </section>
 
         <!-- IOS App project card with fade up animation -->
-        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+        <div class="insp__container" data-aos="fade-up" data-aos-duration="1000">
             <div class="insp__content">
 
-                <h1>Showdown – Mobile IOS App</h1>
+                <h1><em>Showdown</em></h1>
               
                 <div class="project__container">
 
-                    <img src="images/ShowdownIcon.png" style="border-radius: 20%;" alt="Showdown Icon">
+                    <img src="images/ShowdownIcon.png" style="border-radius: 20%; margin-top: 1vw; margin-bottom: 1vw;" alt="Showdown Icon">
          
-                    <p style="font-size: 17px; margin-left: 50px;">
+                    <p style="font-size: 17px;">
                         Creating a mobile ios app was something that I had been considering ever since I began my programming journey. By the time I had started this project, which was a couple of days before my high school graduation, 
                         I had already grasped software development processes - specifically Agile development. <br></br> The main idea behind this app is using Apple's Multipeer Connectivity, an operating system that uses 
                         <a href="https://en.wikipedia.org/wiki/Smartphone_ad_hoc_network" target="_blank" style="color: white;">smartphone ad hoc networks</a>
@@ -158,16 +159,16 @@
         <br></br>
 
         <!-- Code plagiarism checker project card with fade up animation -->
-        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+        <div class="insp__container" data-aos="fade-up" data-aos-duration="1000">
             <div class="insp__content">
 
-                <h1>CopyCat – Code Plagiarism Checker</h1>
+                <h1><em>CopyCat</em></h1>
               
                 <div class="project__container">
 
-                    <img src="images/CopyCatOutput.png" alt="CopyCat Output">
+                    <img src="images/CopyCatOutput.png" style="width: 100%; height: auto; max-width: 40vw; border-radius: 25px; margin-top: 1vw; margin-bottom: 1vw;" alt="CopyCat Output">
          
-                    <p style="font-size: 17px; margin-left: 50px;">
+                    <p style="font-size: 17px;">
                         This assignment was apart of my Data Structures/Algorithms course
                         in high school, around the time of when we were learning regular expressions in Java.
                         <br></br>
@@ -186,16 +187,16 @@
         <br></br>
 
         <!-- Basketball shot simulation project card with fade up animation -->
-        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+        <div class="insp__container" data-aos="fade-up" data-aos-duration="1000">
             <div class="insp__content">
 
-                <h1>Motion – Basketball Shot Simulation</h1>
+                <h1><em>Motion</em></h1>
               
                 <div class="project__container">
 
-                    <img src="images/MotionOutput.png" style="height: auto; width: auto; max-width: 450px;" alt="Basketball shot graph">
+                    <img src="images/MotionOutput.png" style="width: 100%; height: auto; max-width: 40vw; border-radius: 25px; margin-top: 1vw; margin-bottom: 1vw;" alt="Basketball shot graph">
          
-                    <p style="font-size: 17px; margin-left: 50px;">
+                    <p style="font-size: 17px;">
                         Towards the end of my junior year, my physics teacher tasked us with a final project where we could turn in anything 
                         physics related. Earlier on in the year I had made a program that calculated the air trajectory of a 
                         projectile with specific parameters so I decided to do something similar for the project.
@@ -213,18 +214,18 @@
         <br></br>
 
         <!-- GitHub profile card with fade up animation -->
-        <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+        <div class="insp__container" data-aos="fade-up" data-aos-duration="1000">
             <div class="insp__content" style = "margin: auto;">
 
                 <h1>Where can I find the code?</h1>
               
-                <div class="project__container">
+                <div class="project__container" style="display: flex; flex-direction: row;">
 
                     <p>
                         All of these projects can be found under my GitHub profile's repositories.
                         <br></br>
                         <a href="https://github.com/YonathenD?tab=repositories" target = "_blank" style="color: white;">
-                            <img src="images/GitHubIcon.png" style="bottom: -10px; height: 60px; transform: translate(-10%, 35%);" alt="Github Icon"> YonathenD
+                            <img src="images/GitHubIcon.png" style="height: 60px; transform: translateY(10%);" alt="Github Icon"> YonathenD
                         </a>
                     </p>
 
@@ -234,16 +235,15 @@
         </div>
 
         <br></br>
-        <br></br>
 
         <!-- Return home button with fade up animation -->
         <div class="insp__container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
 
-            <div class="container" style="margin-left: auto;">  
+            <div class="container" style="margin-left: 10px;">  
                 <a href="index.html">
                 <button class="cta">
                     <i class="fas fa-plus" style="font-size: 24px;">&lt;</i>
-                    <span class="button-text" style="bottom: 17px;">
+                    <span class="button-text" style="bottom: 16px;">
                       <p class="hero-second-subheading" style="font-size: 14px;">home</p>
                     </span>
                 </button>
